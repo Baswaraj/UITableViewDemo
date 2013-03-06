@@ -16,6 +16,7 @@
 
     self.title = @"Pull to Refresh";
     items = [[NSMutableArray alloc] initWithObjects:@"What time is it?", nil];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -34,6 +35,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 
+    //Git 
     cell.textLabel.text = [items objectAtIndex:indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
